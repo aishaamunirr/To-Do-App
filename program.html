@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+     // Object Manipulation
+        let student ={
+            name: "Aisha",
+            level: 200,
+            age: 20
+        }
+        console.log(student.age)
+
+     // Conditions
+        // If Statement
+        let age = 18;
+        if (age>=18){
+            console.log("Adult")
+        }
+        else{
+            console.log("Not an adult")
+        }
+
+        let grade = 30;
+        if(grade>=70){
+            console.log("A")
+        }
+        else if(grade>=60){
+            console.log("B")
+        }
+        else if(grade >=50){
+            console.log("C")
+        }
+        else if(grade >=40){
+            console.log("D")
+        }
+        else{
+            console.log("F")
+        }
+
+    // Iteration / Loop
+        // For loop: Used when you know the number of itearation
+        for(let i=0; i<=10; i++){
+            console.log(i)
+        }
+
+        // While loop
+        let count = 1;
+        while(count<3){
+            console.log("Hello there!" + count)
+            count ++;
+        }
+
+        // Do-while loop
+        let value = 10;
+        do{
+            console.log("Bonjourr!")
+            value ++;
+        }
+        while(value <=5)
+
+        // Practice
+        for(let i=0; i<5; i++){
+            console.log("This is for for loop practice")
+        }
+        
+        let v=1;
+        while(v<5){
+            console.log("This is for while loop practice")
+            v ++;
+        }
+
+        let p = 1;
+        do{
+            console.log("This is for do while loop practice")
+            p++;
+        }
+        while(p<5)
+
+        let students =[
+            "Laila",
+            "Kala",
+            "Munir",
+            "Muhammad",
+            "Aisha",
+            "Sabeera"
+        ]
+
+        for(student of students){
+            if(student === "kala"){
+                console.log("You found ", student)
+            }
+            else if (student === "Sabeera"){
+            console.log("You found ", student)
+            }
+            else{
+                console.log("We don't have this student")
+            }
+        }
+
+        let animals=["Cat", "Rabbit", "Lion", "Pikachu", "Bull", "Ram", "Cow" ]
+
+        for(animal of animals){
+            if(animal == "Cat" || animal == "Rabbit" || animal =="Lion" || animal =="Bull" || animal=="Ram" || animal=="Cow"){
+                console.log(animal, "is an animal")
+            }
+            else{
+                console.log(animal, "is not an animal")
+            }
+        }
+
+        let car ={
+            owner: "Aisha",
+            type: "BMW",
+            model: 2023,
+        }
+
+        for (let key in car){
+            if(key==="type"){
+                console.log("The car's type is", car[key])
+            }
+        }
+
+        let num = 30;
+        if(num%2==0){
+            console.log(num + " is even")
+        }
+        else{
+            console.log(num + " is odd")
+        }
+
+        let sum=0;
+        for(let i=1; i<=5; i++){
+            sum+=i;
+        }
+        console.log("The sum is:", sum)
+
+        for(let i=1; i<=100; i++){
+            if(i%5==0){
+                console.log(i + " is a multiple of 5")
+            }
+        }
+
+        let numvalue=4;
+        let isPrime = true;
+        if(numvalue==1){
+            isPrime = false;
+        }
+        else{
+            for(i=2; i<numvalue; i++){
+                if(numvalue/i==0){
+                    isPrime = false;
+                }
+                else{
+                    isPrime = true;
+                }
+            }
+        }
+        if (isPrime=false){
+            console.log(numvalue + " is not prime")
+        }
+        else{
+            console.log(numvalue + " is prime")
+        }
+
+
+
+    </script>
+</body>
+</html>
